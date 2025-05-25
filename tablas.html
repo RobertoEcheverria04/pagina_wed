@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Base De Datos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tablas.html">Tabla</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="mb-4 text-center">Tabla Estudiantes</h2>
+        <div class="table-responsive mb-5">
+            <table class="table table-bordered table-hover table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>primer_nombre</th>
+                        <th>segundo_nombre</th>
+                        <th>primer_apellido</th>
+                        <th>segundo_apellido</th>
+                        <th>documento</th>
+                        <th>edad</th>
+                        <th>grado</th>
+                        <th>diagnostico</th>
+                        <th>carnetdesalud</th>
+                        <th>sexo</th>
+                        <th>direccion</th>
+                        <th>tipode_sangre</th>
+                        <th>fecha_hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>JUAN</td>
+                        <td>ANDRES</td>
+                        <td>PEREZ</td>
+                        <td>ARRIETA</td>
+                        <td>1044</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>SINDROME DE DOWN</td>
+                        <td>COMPARTA</td>
+                        <td>MASCULINO</td>
+                        <td>CALLE 7</td>
+                        <td>O+</td>
+                        <td>14/05/2025-2:21 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>FRANK</td>
+                        <td>LUIS</td>
+                        <td>SANDOVAL</td>
+                        <td>VILLA</td>
+                        <td>1045</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>SINDROME DE DOWN</td>
+                        <td>MUTUALSER</td>
+                        <td>MASCULINO</td>
+                        <td>CALLE 11</td>
+                        <td>B+</td>
+                        <td>14/05/2025-2:21 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>SARA</td>
+                        <td>MARIA</td>
+                        <td>VILLA</td>
+                        <td>CAICEDO</td>
+                        <td>1046</td>
+                        <td>11</td>
+                        <td>5</td>
+                        <td>HIPERACTIVIDAD</td>
+                        <td>COMPARTA</td>
+                        <td>FEMENINO</td>
+                        <td>CALLE 10</td>
+                        <td>O-</td>
+                        <td>18/05/2025-1:11 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>PEDRO</td>
+                        <td>ANDRES</td>
+                        <td>GONZALES</td>
+                        <td>ZAPATA</td>
+                        <td>1047</td>
+                        <td>11</td>
+                        <td>5</td>
+                        <td>SINDROME DE DOWN</td>
+                        <td>COMPARTA</td>
+                        <td>MASCULINO</td>
+                        <td>CALLE 12</td>
+                        <td>B-</td>
+                        <td>24/05/2025-3:30 p.m.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>LUIS</td>
+                        <td>DIAS</td>
+                        <td>ALZATE</td>
+                        <td>MOLINA</td>
+                        <td>1048</td>
+                        <td>10</td>
+                        <td>4</td>
+                        <td>HIPERACTIVIDAD</td>
+                        <td>COMPARTA</td>
+                        <td>MASCULINO</td>
+                        <td>CALLE 6</td>
+                        <td>O+</td>
+                        <td>20/05/2025-9:21 a.m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mb-4 text-center">Tabla Colegio</h2>
+        <div class="table-responsive mb-5">
+            <table class="table table-bordered table-hover table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>nombre</th>
+                        <th>ubicacion</th>
+                        <th>direccion</th>
+                        <th>id_docente</th>
+                        <th>id_estudiante</th>
+                        <th>id_secretario</th>
+                        <th>id_orientador</th>
+                        <th>id_coordinador</th>
+                        <th>id_rector</th>
+                        <th>fecha_hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>COLEGIO ANDES</td>
+                        <td>BOGOTÁ</td>
+                        <td>CALLE 10 #20-30</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>COLEGIO SOL</td>
+                        <td>MEDELLÍN</td>
+                        <td>CARRERA 15 #12-40</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>COLEGIO LUNA</td>
+                        <td>CALI</td>
+                        <td>AV. SUR #45-80</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>COLEGIO ESTRELLA</td>
+                        <td>BARRANQUILLA</td>
+                        <td>CALLE 50 #8-10</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>COLEGIO MAR</td>
+                        <td>CARTAGENA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>COLEGIO SACO</td>
+                        <td>SACO</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>COLEGIO CHORRERA</td>
+                        <td>CHORRERA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>COLEGIO PIOJO</td>
+                        <td>PIOJO</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>COLEGIO SANTA VERONICA</td>
+                        <td>SANTA VERONICA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>COLEGIO JUAN DE ACOSTA</td>
+                        <td>JUAN DE ACOSTA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>COLEGIO TUBARA</td>
+                        <td>TUBARA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>COLEGIO NUEVA ESPERANZA</td>
+                        <td>NUEVA ESPERANZA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>COLEGIO BARANOA</td>
+                        <td>BARANOA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>COLEGIO CHOLON</td>
+                        <td>CARTAGENA</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>COLEGIO JUARUCO</td>
+                        <td>JUARUCO</td>
+                        <td>CRA 10 #15-20</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>14/05/2025-2:21 p. m.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mb-4 text-center">Tabla Docente</h2>
+        <div class="table-responsive mb-5">
+            <table class="table table-bordered table-hover table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>primer_nombre</th>
+                        <th>segundo_nombre</th>
+                        <th>primer_apellido</th>
+                        <th>segundo_apellido</th>
+                        <th>documento</th>
+                        <th>asignatura</th>
+                        <th>correo</th>
+                        <th>telefono</th>
+                        <th>fecha-hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>MARTA</td>
+                        <td>TONGA</td>
+                        <td>ARTETA</td>
+                        <td>RAMÍREZ</td>
+                        <td>1044</td>
+                        <td>MATEMÁTICAS</td>
+                        <td>MARTA@COLEGIO.EDU</td>
+                        <td>311111111</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>CARLOS</td>
+                        <td>ANDRES</td>
+                        <td>ARAUJO</td>
+                        <td>PÉREZ</td>
+                        <td>1733</td>
+                        <td>CIENCIAS</td>
+                        <td>CARLOS@COLEGIO.EDU</td>
+                        <td>322222222</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ANA</td>
+                        <td>MARIA</td>
+                        <td>TORRES</td>
+                        <td>MONTERO</td>
+                        <td>2251</td>
+                        <td>ESPAÑOL</td>
+                        <td>ANA@COLEGIO.EDU</td>
+                        <td>333333333</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>LUIS</td>
+                        <td>ALBERTO</td>
+                        <td>MOLINA</td>
+                        <td>GARCÍA</td>
+                        <td>1234</td>
+                        <td>HISTORIA</td>
+                        <td>LUIS@COLEGIO.EDU</td>
+                        <td>344444444</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>SOFÍA</td>
+                        <td>JOANA</td>
+                        <td>MARTÍNEZ</td>
+                        <td>ZAPATA</td>
+                        <td>3356</td>
+                        <td>INGLÉS</td>
+                        <td>SOFIA@COLEGIO.EDU</td>
+                        <td>355555555</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="mb-4 text-center">Tabla Padre/Madre de Familia</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>id</th>
+                        <th>primer_nombre</th>
+                        <th>segundo_nombre</th>
+                        <th>primer_apellido</th>
+                        <th>segundo_apellido</th>
+                        <th>documento</th>
+                        <th>telefono</th>
+                        <th>direccion</th>
+                        <th>ocupacion</th>
+                        <th>estratosocial</th>
+                        <th>fecha-hora</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>JORGE</td>
+                        <td>MARIO</td>
+                        <td>PEREZ</td>
+                        <td>GÓMEZ</td>
+                        <td>89012345</td>
+                        <td>3001112223</td>
+                        <td>CALLE 1 #1-1</td>
+                        <td>INGENIERO</td>
+                        <td>3</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MARÍA</td>
+                        <td>CAMILA</td>
+                        <td>ARTETA</td>
+                        <td>RODRÍGUEZ</td>
+                        <td>78012345</td>
+                        <td>3002223334</td>
+                        <td>CALLE 2 #2-2</td>
+                        <td>DOCTORA</td>
+                        <td>4</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MARIO</td>
+                        <td>ANDRES</td>
+                        <td>LÓPEZ</td>
+                        <td>LÓPEZ</td>
+                        <td>87012345</td>
+                        <td>3003334445</td>
+                        <td>CALLE 3 #3-3</td>
+                        <td>ABOGADO</td>
+                        <td>2</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>MARIA</td>
+                        <td>CAROLINA</td>
+                        <td>ARTETA</td>
+                        <td>PÉREZ</td>
+                        <td>88012345</td>
+                        <td>3004445556</td>
+                        <td>CALLE 4 #4-4</td>
+                        <td>DISEÑADORA</td>
+                        <td>3</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>ÓSCAR</td>
+                        <td>CAMILO</td>
+                        <td>ROJAS</td>
+                        <td>MARTÍNEZ</td>
+                        <td>89099999</td>
+                        <td>3005556667</td>
+                        <td>CALLE 5 #5-5</td>
+                        <td>ARQUITECTO</td>
+                        <td>5</td>
+                        <td>14/05/2025-2:21 p. m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="developer-info">
+                <p>Desarrollado por: <span class="developer-name">Roberto Echeverria</span> & <span class="developer-name">Deivid Galindo</span> & <span class="developer-name">Samuel Davila</span></p>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
